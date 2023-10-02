@@ -1,0 +1,45 @@
+﻿@using TravelTripProject.Data.Entities;
+@using TravelTripProject.Models;
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model Blog
+
+<style>
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 15px;
+        margin-inline: 15px;
+    }
+
+</style>
+
+
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <a href="/Blog/BlogDetail/@Model.Id">  <img src="@Model.BlogImage" class="card-img-top" alt="...">  </a>
+  
+        <div class="card-body">
+            <h5 class="card-title" style="color:red"> Blog Silme İşlemi</h5>
+            <p class="card-text">@Model.Id. Id'ye sahil olan <span style="color:red">"@Model.Title"</span>başlıklı kaydı silmek istediğini Emin Misin?   </p>
+            <form asp-action="Delete" asp-controller="Admin" method="post">
+
+                <div class="row justify-content-end">
+                    <span class="col-auto">
+                        <input type="hidden" asp-for="Id" />
+                        <button class="btn btn-danger"> Sil  </button>
+                        <a asp-action="Index" asp-controller="Admin" class="btn btn-primary">Vazgeç</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+

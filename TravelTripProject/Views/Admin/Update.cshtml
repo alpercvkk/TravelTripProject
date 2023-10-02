@@ -1,0 +1,57 @@
+﻿@using TravelTripProject.Data.Entities;
+@using TravelTripProject.Models;
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model Blog
+
+<h3>Blog Güncelleme Ekranı ....</h3>
+
+<br />
+
+
+<div class="container">
+    <form asp-action="Update" asp-controller="Admin" method="post">
+
+        <div class="row mb-3">
+            <div class="col-1"> <label>Başlık :</label>   </div>
+            <div class="col-5">  <input asp-for="Title" type="text" class="form-control" />   </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1"> <label> Yayınlanma Tarihi: </label></div>
+            <div class="col-5">  <input asp-for="Date" type="date" class="form-control" />  </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1"> <label> Açıklama:</label>  </div>
+            <div class="form-floating col-5">
+                <textarea asp-for="Description" class="form-control" placeholder="Blog yazınızı giriniz..." id="floatingTextarea"></textarea>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1"> <label>  Gösel Url: </label></div>
+            <div class="col-5">
+                <input asp-for="BlogImage" type="text" id="photo" class="form-control" />
+                <div class="form-text" id="basic-addon4">Girdiğiniz URL adresi .jpg uzantılı olmalıdır!</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="">
+                <a asp-action="Index" asp-controller="Admin" type="button" class=" btn btn-secondary"> Vazgeç </a>
+
+                <button type="" class="btn btn-success"> Kaydet </button>
+
+            </div>
+        </div>
+
+
+    </form>
+</div>
+
+

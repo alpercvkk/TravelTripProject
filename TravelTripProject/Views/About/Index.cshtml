@@ -1,0 +1,39 @@
+﻿@using TravelTripProject.Models
+@using TravelTripProject.Data.Entities
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TesstLayout.cshtml";
+}
+
+<style>
+    .kucuk-gorsel {
+        max-width: 900px; /* Maksimum genişlik */
+        max-height: 320px; /* Maksimum yükseklik */
+        width: auto;
+        height: auto;
+    }
+</style>
+
+
+@model List< AboutUs>
+
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3 style="color:#a2365a">Hakkımızda</h3>
+
+            @foreach (var item in Model)
+            {
+                <img class="kucuk-gorsel" src="@item.ImageUrl" alt="" />
+                <p>
+                    @item.Description
+                </p>
+            }
+
+        </div>
+    </div>
+</div>
+
+
+

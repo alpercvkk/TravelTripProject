@@ -1,0 +1,97 @@
+﻿@using TravelTripProject.Models;
+@using TravelTripProject.Data.Entities;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TesstLayout.cshtml";
+}
+
+@model List<Blog>
+
+<style>
+    .kucuk-gorsel {
+        max-width: 725px; /* Maksimum genişlik */
+        max-height: 330px; /* Maksimum yükseklik */
+        width: auto;
+        height: auto;
+    }
+</style>
+
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <link href="~/web2/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/web2/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!----webfonts---->
+
+</head>
+<body>
+
+    <div class="single">
+        <div class="container">
+            <div class="col-md-8 single-main">
+                <div class="single-grid">
+                    @foreach (var item in Model)
+                    {
+                        <img class="kucuk-gorsel" src="@item.BlogImage" alt="" />
+                        <br />
+                        <br />
+                        <a href="/Blog/BlogDetail/@item.Id">@item.Title </a>
+                        <p>
+                            @item.Description
+                        </p>
+                        <br />
+                        <br />
+                    }
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 side-content">
+                <div class="recent">
+                    <h3>SON BLOGLAR</h3>
+                    @{
+                        var lastThreeBlogs = Model.OrderByDescending(x => x.Date).Take(3);
+                    }
+
+                    @foreach (var item in lastThreeBlogs)
+                    {
+                        <ul>
+                            <li><a href="@Url.Action("BlogDetail", "Blog", new { id = item.Id })">@item.Title</a></li>
+                        </ul>
+                    }
+
+
+
+                </div>
+                <div class="comments">
+                    <h3>SON YORUMLAR</h3>
+                    <ul>
+                        <li><a href="#">Amada Doe </a> on <a href="#">Hello World!</a></li>
+                        <li><a href="#">Peter Doe </a> on <a href="#"> Photography</a></li>
+                        <li><a href="#">Steve Roberts  </a> on <a href="#">HTML5/CSS3</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
