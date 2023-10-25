@@ -46,7 +46,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </head>
 <body>
-
+    @{
+        int blogID = 0;
+    }
 
     <!--/header-->
     <div class="single">
@@ -67,6 +69,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 {
                     @foreach (var comment in item.Comments.Where(x => x.BlogId == item.Id))
                     {
+                        blogID = comment.BlogId;
+
                         <ul class="comment-list">
                             <li>
                                 <div class="desc">
@@ -79,16 +83,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </ul>
                     }
                 }
-                <div class="content-form">
-                    <h3>Yorum Yapın...</h3>
-                    <form>
-                        <input type="text" placeholder="Kullanıcı Adı" required />
-                        <input type="text" placeholder="E-posta Adresi" required />
-                        <input type="text" placeholder="Telefon Numarası" required />
-                        <textarea placeholder="Yorum"></textarea>
-                        <input type="submit" value="Gönder" />
-                    </form>
-                </div>
+                @*  <div class="content-form">
+                <h3>Yorum Yapın...</h3>
+
+                <form method="post" asp-action="LeaveAComment" asp-controller="Blog">
+                <input type="text" placeholder="Id" name="@ViewBag.BlogID" />
+                <input type="text" placeholder="Kullanıcı Adı" required />
+                <input type="text" placeholder="E-posta Adresi" required />
+                <textarea placeholder="Yorum"></textarea>
+                <input type="submit" value="Gönder" />
+                </form>
+                </div> *@
+                @await Component.InvokeAsync("LeaveAComment", new {id = blogID})
+
             </div>
 
             <div class="col-md-4 side-content">

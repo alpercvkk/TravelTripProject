@@ -9,101 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TravelTripProject
 build_property.RootNamespace = TravelTripProject
-build_property.ProjectDir = C:\Users\Alper\source\repos\TravelTripProject\TravelTripProject\
+build_property.ProjectDir = C:\Users\Alper\Desktop\Github\TravelTripProject\TravelTripProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Alper\source\repos\TravelTripProject\TravelTripProject
+build_property.MSBuildProjectDirectory = C:\Users\Alper\Desktop\Github\TravelTripProject\TravelTripProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/About/Index.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Admin/Create.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Admin/Delete.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Admin/Index.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Admin/Update.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Blog/BlogDetail.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Blog/BlogDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Blog/Index.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Default/About.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Default/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Default/Index.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Home/Index.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Home/Privacy.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/Components/BestPlaces2/Default.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/Components/BestPlaces2/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmVzdFBsYWNlczJcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/Components/BestPlaces/Default.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/Components/BestPlaces/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmVzdFBsYWNlc1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/Components/Sneak2/Default.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/Components/LeaveAComment/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGVhdmVBQ29tbWVudFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/Components/Sneak2/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU25lYWsyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/Components/Sneak/Default.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/Components/Sneak/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU25lYWtcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/Components/TopTen/Default.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/Components/TopTen/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wVGVuXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/Error.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/_TesstLayout.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/_TesstLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZXNzdExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/_ViewImports.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/_ViewStart.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alper/source/repos/TravelTripProject/TravelTripProject/Views/Shared/_Layout.cshtml]
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-75bv509szw

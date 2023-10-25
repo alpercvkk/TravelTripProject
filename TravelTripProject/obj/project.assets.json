@@ -10693,11 +10693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alper\\source\\repos\\TravelTripProject\\TravelTripProject\\TravelTripProject.csproj",
+      "projectUniqueName": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\TravelTripProject.csproj",
       "projectName": "TravelTripProject",
-      "projectPath": "C:\\Users\\Alper\\source\\repos\\TravelTripProject\\TravelTripProject\\TravelTripProject.csproj",
+      "projectPath": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\TravelTripProject.csproj",
       "packagesPath": "C:\\Users\\Alper\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alper\\source\\repos\\TravelTripProject\\TravelTripProject\\obj\\",
+      "outputPath": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alper\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10708,7 +10708,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10771,7 +10770,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

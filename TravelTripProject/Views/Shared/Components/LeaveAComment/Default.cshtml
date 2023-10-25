@@ -1,0 +1,17 @@
+﻿@using TravelTripProject.Data.Entities
+@using TravelTripProject.Models
+
+
+@model Comment
+
+<div class="content-form">
+    <h3>Yorum Yapın...</h3>
+
+    <form method="post" asp-action="LeaveAComment" asp-controller="Blog"   >
+        <input asp-for="BlogId" placeholder="" value="" required />
+        <input asp-for="UserName"  type="text" placeholder="Kullanıcı Adı"  required />
+        <input asp-for="Email"  type="text" placeholder="E-posta Adresi"  required />
+        <textarea asp-for="Remark" placeholder="Yorum" ></textarea>
+        <input type="submit" value="Gönder" />
+    </form>
+</div>
