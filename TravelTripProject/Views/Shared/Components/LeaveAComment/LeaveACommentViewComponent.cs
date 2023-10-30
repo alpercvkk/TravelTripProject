@@ -13,7 +13,8 @@ namespace TravelTripProject.Views.Shared.Components.LeaveACommentViewComponent
             if(comment is  null)
             {
                 comment = new Comment();
-                comment.BlogId = id;
+                //comment.BlogId = id;
+                ViewBag.BlogIddd = id;
             }
              
             return View(comment);

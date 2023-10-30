@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.AccessControl;
 using TravelTripProject.Data;
@@ -6,6 +7,8 @@ using TravelTripProject.Data.Entities;
 
 namespace TravelTripProject.Controllers
 {
+    [Authorize(AuthenticationSchemes = "AC1999")]
+    [Authorize(Roles = "Admin")]
     public class BlogController : Controller
     {
         public IActionResult Index()
@@ -23,8 +26,9 @@ namespace TravelTripProject.Controllers
         {
             var db = new TravelTripDbContext();
 
-             var findBlog  =  db.Blogs.Include(x => x.Comments).Where(x => x.Id == id).ToList(); 
-           
+             var findBlog  =  db.Blogs.Include(x => x.Comments).Where(x => x.Id == id).ToList();
+
+            ViewBag.BlogDetailID = id;
             return View(findBlog);
         }
 

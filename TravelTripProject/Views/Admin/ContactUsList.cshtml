@@ -1,0 +1,54 @@
+﻿@using TravelTripProject.Data.Entities
+@using TravelTripProject.Models
+
+@{
+    ViewData["Title"] = "ContactUsList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model List<Contact>
+
+<style>
+    .container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+</style>
+
+<br />
+<h2> Easy Trip İletişim Formu  </h2>
+
+<div class="container">
+
+   
+    <div class="row mb-3">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th> Id </th>
+                    <th> Kullanıcı Adı </th>
+                    <th> E-posta Adresi </th>
+                    <th> Konu </th>
+                    <th> Mesaj </th>
+                  
+                    <th> Sil </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td> @item.Name </td>
+                        <td> @item.Email </td>
+                        <td> @item.Subject </td>
+                        <td> @item.Message  </td>
+                        <td>
+                            <a href="/Admin/DeleteContactUs/@item.Id" id="DeleteBtn" onclick="return confirm('Silmek İstediğinize Emin Misiniz?');" class="btn btn-danger"> Sil </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

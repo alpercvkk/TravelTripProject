@@ -8,8 +8,10 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
+
 <html>
 <head>
+    <script src="https://kit.fontawesome.com/318d550cae.js" crossorigin="anonymous"></script>
     <title>Free Easy-Trip Website Template | Home :: w3layouts</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
@@ -31,13 +33,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
     </script>
 </head>
+
 <body>
     <div class="header">
         <div class="wrap">
             <div class="logo"><a href="index.html"><img src="~/web/images/logo.png" alt="" /></a></div>
-            <div class="con-right">
+            <div class="con-right" style="padding-right: 0">
                 <div class="grid1-l-img">
-                    <img src="~/web/images/contact.png" alt="">
+                    <a href="https://wa.me/9000000000"><i class="fa-brands fa-whatsapp fa-2x" style="color: #469b66;"></i></a>
                 </div>
                 <div class="grid1-l-desc">
                     <p>Whatsapp +90 000 00 00 </p>
@@ -53,7 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <li><a asp-area="" asp-controller="Default" asp-action="Index">Ana Sayfa</a></li>
                 <li><a asp-area="" asp-controller="About" asp-action="Index">Hakkımızda</a></li>
                 <li>
-                    <a class="hsubs" href="destinations.html">Rehber</a>
+                    <a class="hsubs" href="#">Rehber</a>
                     <ul class="subs">
                         <li><a href="#">Oteller</a></li>
                         <li><a href="#">Restoranlar</a></li>
@@ -61,7 +64,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </ul>
                 </li>
                 <li><a asp-area="" asp-controller="Blog" asp-action="Index">Blogum</a></li>
-                <li><a href="contact.html">İletişim</a></li>
+                <li><a  asp-area="" asp-action="ContactUs" asp-controller="About">İletişim</a></li>
             </ul>
         </div>
     </div>

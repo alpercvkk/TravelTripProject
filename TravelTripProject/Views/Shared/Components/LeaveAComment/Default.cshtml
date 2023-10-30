@@ -8,7 +8,7 @@
     <h3>Yorum Yapın...</h3>
 
     <form method="post" asp-action="LeaveAComment" asp-controller="Blog"   >
-        <input asp-for="BlogId" placeholder="" value="" required />
+        <input type="hidden" asp-for="BlogId" value="@ViewBag.BlogIddd" />
         <input asp-for="UserName"  type="text" placeholder="Kullanıcı Adı"  required />
         <input asp-for="Email"  type="text" placeholder="E-posta Adresi"  required />
         <textarea asp-for="Remark" placeholder="Yorum" ></textarea>

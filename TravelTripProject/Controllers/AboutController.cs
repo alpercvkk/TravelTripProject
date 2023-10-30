@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TravelTripProject.Data;
-
-
+using TravelTripProject.Data.Entities;
 
 namespace TravelTripProject.Controllers
 {
@@ -15,5 +14,28 @@ namespace TravelTripProject.Controllers
 
 			return View(values);
 		}
-	}
+
+
+		[HttpGet]
+		public IActionResult ContactUs()
+		{
+
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult ContactUs(Contact contact)
+		{
+            var db = new TravelTripDbContext();
+
+			db.Contacts.Add(contact);
+            db.SaveChanges();
+            ModelState.Clear();
+
+            return RedirectToAction ("ContactUs","About");
+		}
+
+
+
+    }
 }

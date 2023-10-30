@@ -14,29 +14,37 @@
 
 
 <div class="container">
+    <div class="row mb-3 ">
+
+    </div>
     <form asp-action="Update" asp-controller="Admin" method="post">
 
         <div class="row mb-3">
             <div class="col-1"> <label>Başlık :</label>   </div>
-            <div class="col-5">  <input asp-for="Title" type="text" class="form-control" />   </div>
+            <div class="col-5">  <input asp-for="Title" type="text" class="form-control" />
+                <span asp-validation-for="Title"></span>   </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-1"> <label> Yayınlanma Tarihi: </label></div>
-            <div class="col-5">  <input asp-for="Date" type="date" class="form-control" />  </div>
+            <div class="col-5">  <input asp-for="Date" type="date" class="form-control" />
+                <span asp-validation-for="Date"></span>   </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-1"> <label> Açıklama:</label>  </div>
             <div class="form-floating col-5">
-                <textarea asp-for="Description" class="form-control" placeholder="Blog yazınızı giriniz..." id="floatingTextarea"></textarea>
+                <textarea asp-for="Description" class="form-control" placeholder="Blog yazınızı giriniz..." id="floatingTextarea">
+                <span asp-validation-for="Description"></span> 
+                </textarea>
             </div>
         </div>
 
         <div class="row mb-3">
-            <div class="col-1"> <label>  Gösel Url: </label></div>
+            <div class="col-1"> <label>  Görsel Url: </label></div>
             <div class="col-5">
                 <input asp-for="BlogImage" type="text" id="photo" class="form-control" />
+                <span asp-validation-for="BlogImage"></span>
                 <div class="form-text" id="basic-addon4">Girdiğiniz URL adresi .jpg uzantılı olmalıdır!</div>
             </div>
         </div>

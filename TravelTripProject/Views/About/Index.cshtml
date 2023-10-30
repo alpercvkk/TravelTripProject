@@ -5,35 +5,150 @@
     Layout = "~/Views/Shared/_TesstLayout.cshtml";
 }
 
+@model List<AboutUs>
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <link href="~/web2/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/web2/css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="https://kit.fontawesome.com/318d550cae.js" crossorigin="anonymous"></script>
+
+    <!----webfonts---->
+
+</head>
+
 <style>
-    .kucuk-gorsel {
-        max-width: 900px; /* Maksimum genişlik */
-        max-height: 320px; /* Maksimum yükseklik */
-        width: auto;
-        height: auto;
+    .about {
+        padding: 130px 0;
     }
-</style>
 
+        .about .heading h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
 
-@model List< AboutUs>
-
-
-<div class="content">
-    <div class="wrap">
-        <div class="about">
-            <h3 style="color:#a2365a">Hakkımızda</h3>
-
-            @foreach (var item in Model)
-            {
-                <img class="kucuk-gorsel" src="@item.ImageUrl" alt="" />
-                <p>
-                    @item.Description
-                </p>
+            .about .heading h2 span {
+                color: #F24259;
             }
 
+        .about .heading p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.7;
+            color: #999999;
+            margin: 20px 0 60px;
+            padding: 0;
+        }
+
+        .about h3 {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.7;
+            color: #999999;
+            margin: 20px 0 15px;
+            padding: 0;
+        }
+
+        .about h4 {
+            font-size: 15px;
+            font-weight: 500;
+            margin: 8px 0;
+        }
+
+            .about h4 i {
+                color: #F24259;
+                margin-right: 10px;
+            }
+
+</style>
+
+<body>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>
+                    BEN KİMİM
+                    <span style="color:#a2365a;">?</span>
+                </h2>
+                <p>
+                    Seyahatlerimizde yaşadığımız deneyimleri sizinle paylaşmaktan mutluluk duyuyoruz.
+                    <br>
+                    En güzel tatil rotaları ve ipuçları için bizi takip edin!
+                </p>
+            </div>
+
+            <div class="row">
+
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-6">
+
+                        <img src=" @item.ImageUrl" class="img-fluid" width="100%">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Ben de gezmek istiyorum ama tecrübem az. Ne önerirsiniz? </h3>
+                        <p>
+                            @item.Description
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-6" style="color:black;">
+                                <h4>
+                                    <i style="color: #a2365a" class="far fa-star"></i>Adrenalin Dolu Aktiviteler
+                                </h4>
+                            </div>
+                            <div class="col-md-6 " style="color:black;">
+                                <h4>
+                                    <i style="color: #a2365a" class="far fa-star"></i>
+                                    Bütçe Dostu Planlar
+                                </h4>
+                            </div>
+                            <div class="col-md-6" style="color:black;">
+                                <h4>
+                                    <i style="color: #a2365a" class="far fa-star"></i>Çeşitli Rotalar
+                                </h4>
+                            </div>
+                            <div class="col-md-6" style="color:black;">
+                                <h4>
+                                    <i style="color: #a2365a" class="far fa-star"></i>
+                                    Yerel Rehberler
+                                </h4>
+                            </div>
+                            <div class="col-md-6" style="color:black;">
+                                <h4>
+                                    <i style="color: #a2365a" class="far fa-star"></i>Yerel Lezzetler
+                            </div>
+                            <div class="col-md-6" style="color:black;">
+                                <h4>
+                                    <i style="color: #a2365a" class="far fa-star"></i>
+                                    Doğal Güzellikler ve Tarihi Yerler
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                }        
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-
-
+</body>
+</html>

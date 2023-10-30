@@ -16,8 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Alper\Desktop\Github\TravelTripProject\TravelTripProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/About/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQ29udGFjdFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/AboutUsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVc0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/CommentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29tbWVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/ContactUsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdFVzTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/Create.cshtml]
@@ -34,6 +54,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/UpdateAboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Admin/UpdateComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlQ29tbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alper/Desktop/Github/TravelTripProject/TravelTripProject/Views/Blog/BlogDetail.cshtml]

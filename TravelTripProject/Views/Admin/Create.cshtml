@@ -7,45 +7,73 @@
 
 @model Blog
 
-<h3>Blog Ekleme Ekranı ....</h3>
+
+
+<br />
+<h3 style="padding-left:20px"> Blog Ekleme Ekranı ....</h3>
 
 <br />
 
 
+
+
 <div class="container">
+
+    <div class="row mb-3 ">
+
+        @if (ViewBag.Message is not null)
+        {
+            <button class="btn btn-primary ">
+                @ViewBag.Message
+            </button>
+        }
+
+
+    </div>
+
     <form asp-action="Create" asp-controller="Admin" method="post">
 
         <div class="row mb-3">
             <div class="col-1"> <label>Başlık :</label>   </div>
-            <div class="col-5">  <input asp-for="Title" type="text" class="form-control" />   </div>
+            <div class="col-5">
+                <input asp-for="Title" type="text" class="form-control" />
+                <span style="color:darkblue" asp-validation-for="Title"> </span>
+            </div>
+
         </div>
 
         <div class="row mb-3">
             <div class="col-1"> <label> Yayınlanma Tarihi: </label></div>
-            <div class="col-5">  <input asp-for="Date" type="date" class="form-control" />  </div>
+            <div class="col-5">
+                <input asp-for="Date" type="date" class="form-control" />
+                <span style="color:darkblue" asp-validation-for="Date"> Tarih Boş Geçilemez </span>
+            </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-1"> <label> Açıklama:</label>  </div>
             <div class="form-floating col-5">
-                <textarea  asp-for="Description"  class="form-control" placeholder="Blog yazınızı giriniz..." id="floatingTextarea"></textarea>
+                <textarea asp-for="Description" class="form-control" placeholder="Blog yazınızı giriniz..." id="floatingTextarea"></textarea>
+                <span style="color:darkblue" asp-validation-for="Description"> </span>
             </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-1"> <label>  Gösel Url: </label></div>
-            <div class="col-5">  <input asp-for="BlogImage" type="text" id="photo"   class="form-control" /> 
+            <div class="col-5">
+                <input asp-for="BlogImage" type="text" id="photo" class="form-control" />
+                <span style="color:darkblue" asp-validation-for="BlogImage"> </span>
                 <div class="form-text" id="basic-addon4">Girdiğiniz URL adresi .jpg uzantılı olmalıdır!</div>
             </div>
         </div>
 
         <div class="row">
-           <div class="">
-               <a asp-action="Index" asp-controller="Admin"  type="button" class=" btn btn-secondary"> Vazgeç </a>
-               
-               <button  type=""  class="btn btn-success"> Kaydet </button>
+            <div class="">
+                <a asp-action="Index" asp-controller="Admin" type="button" class=" btn btn-secondary"> Vazgeç </a>
 
-           </div> 
+                <button type="" class="btn btn-success"> Kaydet </button>
+
+            </div>
         </div>
 
 

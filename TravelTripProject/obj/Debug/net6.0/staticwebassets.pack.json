@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\fontawesome-free-6.4.2-web.zip",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.2-web.zip"
     },
     {
       "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\js\\site.js",
@@ -483,6 +491,34 @@
     {
       "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\web\\w3layouts-License.txt",
       "PackagePath": "staticwebassets\\web\\w3layouts-License.txt"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\weblogin Tema.rar",
+      "PackagePath": "staticwebassets\\weblogin Tema.rar"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\weblogin\\css\\style.css",
+      "PackagePath": "staticwebassets\\weblogin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\weblogin\\fonts\\Asap-Regular.ttf",
+      "PackagePath": "staticwebassets\\weblogin\\fonts\\Asap-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\weblogin\\fonts\\Audiowide-Regular.ttf",
+      "PackagePath": "staticwebassets\\weblogin\\fonts\\Audiowide-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\weblogin\\images\\b4.jpg",
+      "PackagePath": "staticwebassets\\weblogin\\images\\b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\weblogin\\index.html",
+      "PackagePath": "staticwebassets\\weblogin\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Alper\\Desktop\\Github\\TravelTripProject\\TravelTripProject\\wwwroot\\weblogin\\w3layouts-License.txt",
+      "PackagePath": "staticwebassets\\weblogin\\w3layouts-License.txt"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TravelTripProject.Microsoft.AspNetCore.StaticWebAssets.props",

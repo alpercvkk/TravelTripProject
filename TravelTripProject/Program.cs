@@ -2,6 +2,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication("AC1999")
+    .AddCookie("AC1999", opttion =>
+    {
+        opttion.LoginPath = "/Account/Login";
+    });
 
 var app = builder.Build();
 
