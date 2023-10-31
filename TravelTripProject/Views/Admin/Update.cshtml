@@ -8,7 +8,7 @@
 
 @model Blog
 
-<h3>Blog Güncelleme Ekranı ....</h3>
+<h3 style="margin-left: 20px;">Blog Güncelleme Ekranı ....</h3>
 
 <br />
 
@@ -18,30 +18,48 @@
 
     </div>
     <form asp-action="Update" asp-controller="Admin" method="post">
-
+        
+            @if (ViewBag.ErrorMessage != null)
+            {
+            <div class="row mb-3">
+                <span>@ViewBag.ErrorMessage</span>
+            </div>
+            }
+       
         <div class="row mb-3">
-            <div class="col-1"> <label>Başlık :</label>   </div>
-            <div class="col-5">  <input asp-for="Title" type="text" class="form-control" />
-                <span asp-validation-for="Title"></span>   </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-1"> <label> Yayınlanma Tarihi: </label></div>
-            <div class="col-5">  <input asp-for="Date" type="date" class="form-control" />
-                <span asp-validation-for="Date"></span>   </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-1"> <label> Açıklama:</label>  </div>
-            <div class="form-floating col-5">
-                <textarea asp-for="Description" class="form-control" placeholder="Blog yazınızı giriniz..." id="floatingTextarea">
-                <span asp-validation-for="Description"></span> 
-                </textarea>
+            <div class="col-1">
+                <label>Başlık :</label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Title" type="text" class="form-control" />
+                <span asp-validation-for="Title"></span>
             </div>
         </div>
 
         <div class="row mb-3">
-            <div class="col-1"> <label>  Görsel Url: </label></div>
+            <div class="col-1">
+                <label> Yayınlanma Tarihi: </label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Date" type="date" class="form-control" />
+                <span asp-validation-for="Date"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1">
+                <label> Açıklama:</label>
+            </div>
+            <div class="form-floating col-5">
+                <textarea asp-for="Description" class="form-control" placeholder="Blog yazınızı giriniz..." id="floatingTextarea"></textarea>
+                <span asp-validation-for="Description"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1">
+                <label>  Görsel Url: </label>
+            </div>
             <div class="col-5">
                 <input asp-for="BlogImage" type="text" id="photo" class="form-control" />
                 <span asp-validation-for="BlogImage"></span>
@@ -51,14 +69,10 @@
 
         <div class="row">
             <div class="">
-                <a asp-action="Index" asp-controller="Admin" type="button" class=" btn btn-secondary"> Vazgeç </a>
-
-                <button type="" class="btn btn-success"> Kaydet </button>
-
+                <a asp-action="Index" asp-controller="Admin" type="button" class="btn btn-secondary"> Vazgeç </a>
+                <button type="submit" class="btn btn-success"> Kaydet </button>
             </div>
         </div>
-
-
     </form>
 </div>
 

@@ -6,5 +6,34 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>UpdateAboutUs</h1>
+@model AboutUs
 
+    <h3 style="margin-left: 20px;">Güncelleme İşlemi </h3>
+    <br />
+
+<div class="container">
+    <form asp-action="UpdateAboutUs" asp-controller="Admin">
+        <div class="row mb-3">
+            <div class="col-1"> <label>  Gösel Url: </label></div>
+            <div class="col-5">
+                <input asp-for="ImageUrl" type="text" id="photo" class="form-control" />
+                <div class="form-text" id="basic-addon4">Girdiğiniz URL adresi .jpg uzantılı olmalıdır!</div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-1"> <label>  Hakkımızda: </label></div>
+            <div class="col-5">
+                <textarea asp-for="Description" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px">  </textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="justify-content-center">
+                <a asp-action="AboutUsList" asp-controller="Admin" type="button" class=" btn btn-secondary"> Vazgeç </a>
+
+                <button type="submit" class="btn btn-success"> Kaydet </button>
+
+            </div>
+        </div>
+    </form>
+</div>

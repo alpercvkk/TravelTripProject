@@ -8,6 +8,8 @@ using TravelTripProject.Models;
 
 namespace TravelTripProject.Controllers
 {
+
+   
     public class AccountController : Controller
     {
 

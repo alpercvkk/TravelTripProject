@@ -7,8 +7,8 @@ using TravelTripProject.Data.Entities;
 
 namespace TravelTripProject.Controllers
 {
-    [Authorize(AuthenticationSchemes = "AC1999")]
-    [Authorize(Roles = "Admin")]
+//    [Authorize(AuthenticationSchemes = "AC1999")]
+//    [Authorize(Roles = "Admin")]
     public class BlogController : Controller
     {
         public IActionResult Index()

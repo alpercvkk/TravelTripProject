@@ -15,9 +15,9 @@
     }
 </style>
 <br />
-
+<h2 style="margin-left: 20px;">  Hakkımızda Sayfası   </h2>
 <div class="container">
-    <h2>  Hakkımızda Sayfası   </h2>
+   
     <br />
 
     <div class="row mb-3">
@@ -36,8 +36,9 @@
                     <tr>
                         <td> @item.Id  </td>
                         <td> @item.ImageUrl </td>
-                        <td> @item.Description </td>
-                        <td> <a class="btn btn-primary"> Güncelle </a> </td>
+                        <td style="color:darkblue" > @(item.Description.Length > 120 ? item.Description.Substring(0, 120) + "..." : item.Description) </td>
+
+                        <td> <a asp-action="UpdateAboutUs" asp-controller ="Admin"  asp-route-id ="@item.Id" class="btn btn-primary"> Güncelle </a> </td>
 
                     </tr>
                 }

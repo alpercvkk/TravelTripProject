@@ -26,14 +26,21 @@ namespace TravelTripProject.Controllers
 		[HttpPost]
 		public IActionResult ContactUs(Contact contact)
 		{
-            var db = new TravelTripDbContext();
+			if (ModelState.IsValid)
+			{
+                var db = new TravelTripDbContext();
 
-			db.Contacts.Add(contact);
-            db.SaveChanges();
-            ModelState.Clear();
+                db.Contacts.Add(contact);
+                db.SaveChanges();
+                ModelState.Clear();
+                return RedirectToAction("ContactUs", "About");
 
-            return RedirectToAction ("ContactUs","About");
-		}
+            }
+
+			return View();
+            
+
+        }
 
 
 

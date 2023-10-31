@@ -88,13 +88,15 @@ namespace TravelTripProject.Controllers
         public IActionResult Update(Blog blog)
         {
 
-            var db = new TravelTripDbContext();
-            db.Blogs.Update(blog);
-            db.SaveChanges();
-            ModelState.Clear();
-
-
-            return RedirectToAction("Index", "Admin");
+            if (ModelState.IsValid)
+            {
+                var db = new TravelTripDbContext();
+                db.Blogs.Update(blog);
+                db.SaveChanges();
+                ModelState.Clear();
+                return RedirectToAction("Index", "Admin");
+            }
+            return View();
         }
 
         // Comment İşlemleri >>>>>>>>
@@ -131,11 +133,16 @@ namespace TravelTripProject.Controllers
         [HttpPost]
         public IActionResult UpdateComment(Comment comment)
         {
-            var db = new TravelTripDbContext();
-            db.Comments.Update(comment);
-            db.SaveChanges();
-            ModelState.Clear();
-            return RedirectToAction("CommentList", "Admin");
+            if (ModelState.IsValid)
+            {
+                var db = new TravelTripDbContext();
+                db.Comments.Update(comment);
+                db.SaveChanges();
+                ModelState.Clear();
+                return RedirectToAction("CommentList", "Admin");
+
+            }
+            return View();
 
         }
 
